@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>stream 배열 다루기</h1>
+    <hr>
+    <script>
+        let arr = [1, 2, 3]; // 불변데이터
+
+        // 1. 값 추가
+        let copyArr = [0, ...arr, 4]; // 깊은 복사 & 값 추가
+        console.log(copyArr);
+
+        // 2. 값 가공
+        let mapArr = arr.map(i => i * 2);
+        console.log(mapArr);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>제이슨</h1>
+    <hr>
+    <script>
+        let user = {
+            id: 1,
+            username: "ssar",
+            password: "1234",
+            hobby: ["축구", "농구"]
+        };
+        //java script object랑 비슷하게 생겼다 그러나 JSON은 키값에도 ""가 붙는다.
+
+        //JS OBJECT -> JSON STRING
+        let requestBody = JSON.stringify(user);
+        console.log(requestBody);
+
+
+        //JSON STRING -> JS OBJECT
+        let reponseBody = JSON.parse(requestBody);
+        console.log(reponseBody);
+
+    </script>
+
+
+</body>
+
+</html>
