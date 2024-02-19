@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">이벤트 기본</h1>
+    <hr>
+    <button onclick="changeTitle()">제목변경</button>
+
+    <script>
+        function changeTitle() {
+            alert("제목변경 클릭 됨");
+            //호출은 바로 실행하지 않고
+            //window는 최상위 객체 window.는 생략 가능하다
+            // id는 문서에서 유일해야 한다.
+            // class는 중복가능하다.
+            // element=tag는 중복가능하다. (h1), (div)
+            let title = document.querySelector("#title"); // id로 찾으면 querySelector 클래스와 element는 querySelectorAll
+            console.log(title);
+            title.innerHTML = "<i>반가워</i>";
+        }
+    </script>
+</body>
+
+</html>

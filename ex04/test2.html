@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">이벤트 두번째 version</h1>
+    <hr>
+    <button id="btn-change">박동기</button>
+
+    <script>
+        // 행위를 자바스크립트로 거는 것
+        let btn = document.querySelector("#btn-change");
+        btn.addEventListener("dblclick", changeTitle);
+
+        function changeTitle(e) {
+            console.log(e);
+            alert(e.target.innerHTML);
+            let title = document.querySelector("#title"); // id로 찾으면 querySelector 클래스와 element는 querySelectorAll
+            title.innerHTML = e.target.innerHTML;
+        }
+    </script>
+</body>
+
+</html>
