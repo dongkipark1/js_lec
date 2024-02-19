@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <button>Hide</button>
+
+    <p>신기한거 보여줄게</p>
+    <p>느리게 사라지기.</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide(2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
