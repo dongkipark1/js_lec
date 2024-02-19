@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <button>버튼만 누르면 사라지고 나타나고</button>
+
+    <p>안녕</p>
+    <p>하이.</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").toggle();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
