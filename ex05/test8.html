@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <p id="test1">hello!</p>
+    <p id="test2">my name is!</p>
+
+    <p>Input field: <input type="text" id="test3" value="What's your name?"></p>
+
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#test1").text("안녕!");
+            });
+            $("#btn2").click(function () {
+                $("#test2").html("<b>내이름은!</b>");
+            });
+            $("#btn3").click(function () {
+                $("#test3").val("DK PARK");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
