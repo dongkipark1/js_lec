@@ -15,13 +15,15 @@
     <script>
         // 행위를 자바스크립트로 거는 것
         let btn = document.querySelector("#btn-change");
-        btn.addEventListener("dblclick", changeTitle);
+        btn.addEventListener("mouseover", changeTitle);
 
+        let num = -1;
         function changeTitle(e) {
             console.log(e);
             alert(e.target.innerHTML);
             let title = document.querySelector("#title"); // id로 찾으면 querySelector 클래스와 element는 querySelectorAll
-            title.innerHTML = e.target.innerHTML;
+            num = num * -1;
+            title.innerHTML = num * -1;
         }
     </script>
 </body>
