@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <p><a href="https://github.com/dongkipark1/js_lec" id="dong">github.com/dongkipark</a></p>
+
+    <button>Show href Value</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                alert($("#dong").attr("href"));
+            });
+        });
+    </script>
+
+</body>
+
+</html>
