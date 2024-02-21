@@ -13,10 +13,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         function appendText() {
-            var txt1 = "<p>안녕.</p>";        // Create text with HTML
-            var txt2 = $("<p></p>").text("메롱.");  // Create text with jQuery
+            var txt1 = "<p>안녕.</p>";        // HTML 방식 텍스트 생성
+            var txt2 = $("<p></p>").text("메롱.");  //  jQuery 방식 텍스트 생성
             var txt3 = document.createElement("p");
-            txt3.innerHTML = "히히.";         // Create text with DOM
+            txt3.innerHTML = "히히.";         // DOM방식 텍스트 생성
             $("body").append(txt1, txt2, txt3);   // Append new elements
         }
     </script>
